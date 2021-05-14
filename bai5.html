@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  var diemKiemTra = parseFloat(prompt("Nhập điểm kiểm tra: "));
+  var diemGiuaKy = parseFloat(prompt("Nhập điểm thi giữa kỳ: "));
+  var diemCuoiKy = parseFloat(prompt("Nhập điểm thi cuối kỳ: "));
+  var avg = (diemKiemTra+diemGiuaKy+diemCuoiKy)/3;
+  document.write(avg +"<br>");
+  if(avg<=4){
+      document.write("HSY");
+  }else if(avg<=6){
+      document.write("HSTB");
+  }else if(avg<=8){
+      document.write("HSTT");
+  }else{
+      document.write("HSG");
+  }
+</script>
+</body>
+</html>
